@@ -25,7 +25,7 @@ Module.register("lifecounter", {
 		var lifecounter = moment().diff(this.config.birthday, this.config.counter) + this.config.comment;
 		var wrapper = document.createElement("div");
 		wrapper.className = "normal ssmall";
-		wrapper.innerHTML = lifecounter;
+		wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 		return wrapper;
 	}
 });
