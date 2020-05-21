@@ -7,8 +7,8 @@
 Module.register("lifecounter", {
 	defaults: {
 		birthday: "1970-12-31 12:00:00",
-		counter: "years", // seconds, minutes, hours, months, weeks, days, years
-		comment: " secunde", // your comment
+		counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
+		comment: " seconds from my birtday", // your comment
 	},
 	
 	getScripts: function() {return ["moment.js", "jquery.js"];},
@@ -22,9 +22,10 @@ Module.register("lifecounter", {
 	},
 
 	getDom: function() {
+		var lifecounter = moment().diff(this.config.birthday, this.config.counter) + this.config.comment;
 		var wrapper = document.createElement("div");
 		wrapper.className = "normal ssmall";
-		wrapper.innerHTML = moment().diff(this.config.birthday, this.config.counter) + this.config.comment;
+		wrapper.innerHTML = lifecounter;
 		return wrapper;
 	}
 });
