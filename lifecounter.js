@@ -11,7 +11,7 @@ Module.register("lifecounter", {
 		comment: " seconds from my birthday", // your comment
 	},
 	
-	getScripts: function() {return ["moment.js", "jquery.js"];},
+	getScripts: function() {return ["moment.js"];},
 
 	start: function() {
 		Log.info("Starting module: " + this.name); 
