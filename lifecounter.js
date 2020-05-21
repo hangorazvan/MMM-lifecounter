@@ -8,7 +8,7 @@ Module.register("lifecounter", {
 	defaults: {
 		birthday: "1970-12-31 12:00:00",
 		counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
-		comment: " seconds from my birtday", // your comment
+		comment: " seconds from my birthday", // your comment
 	},
 	
 	getScripts: function() {return ["moment.js", "jquery.js"];},
