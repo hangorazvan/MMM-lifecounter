@@ -6,7 +6,7 @@
 
 Module.register("lifecounter", {
 	defaults: {
-		birthday: "1970-12-31 12:00:00",
+		birthday: "1988-12-31 12:00:00",
 		counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
 		before: "Has been", // your comment
 		after: "seconds of your life", // your comment
