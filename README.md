@@ -4,9 +4,9 @@ As a number, 1 billion is an almost unimaginable. Here’s a way to help you ima
 <img src=https://github.com/hangorazvan/MMM-lifecounter/blob/master/preview.png>
 
 <br>{
-<br>	module: "lifecounter",
-<br>	position: "top_left",
-<br>	config: {
+<br>	  module: "lifecounter",
+<br>	  position: "top_left",
+<br>	  config: {
 <br>	    	birthday: "1970-12-31 12:00:00",
 <br>	    	counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
 <br>	    	before: "Has been", // your comment
