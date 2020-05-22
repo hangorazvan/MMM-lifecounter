@@ -28,7 +28,7 @@ Module.register("lifecounter", {
 		var yourtime = moment().diff(this.config.birthday, this.config.counter);
 		var lifecounter = this.config.before + " " + yourtime + " " + this.config.after;
 
-		if (yourtime > 499395200 && yourtime < 1000086400){ // one week before and one day after
+		if (yourtime > 999395200 && yourtime < 1000086400){ // one week before and one day after
 		    wrapper.className = "bright " + this.config.cssclass;
 		} else {
 		    wrapper.className = "normal " + this.config.cssclass;
