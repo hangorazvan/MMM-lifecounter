@@ -4,13 +4,23 @@ As a number, 1 billion is an almost unimaginable. Here’s a way to help you ima
 <img src=https://github.com/hangorazvan/MMM-lifecounter/blob/master/preview.png>
 
 {
+
 	module: "lifecounter",
+	
 	position: "top_left",
+	
 	config: {
+	
 	    	birthday: "1970-12-31 12:00:00",
+		
 	    	counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
+		
 	    	before: "Has been", // your comment
+		
 	    	after: "seconds of your life", // your comment
+		
 		cssclass: "small",
+		
 	}
+	
 },
