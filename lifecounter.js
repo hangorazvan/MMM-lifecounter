@@ -6,14 +6,16 @@
 
 Module.register("lifecounter", {
 	defaults: {
-		birthday: "1970-12-31 12:00:00", // year, month, day, 24 hour birthday time
+		birthday: "1988-12-31 12:00:00", // year, month, day, 24 hour birthday time
 		counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
 		before: "Has been", // your comment
 		after: "seconds of your life", // your comment
 		cssclass: "small",
 	},
 	
-	getScripts: function() {return ["moment.js"];},
+	getScripts: function() {
+		return ["moment.js"];
+	},
 
 	start: function() {
 		Log.info("Starting module: " + this.name); 
@@ -28,16 +30,16 @@ Module.register("lifecounter", {
 		var yourtime = moment().diff(this.config.birthday, this.config.counter);
 		var lifecounter = this.config.before + " " + yourtime + " " + this.config.after;
 
-        if (yourtime > 999395200 && yourtime < 1000086400) { // one week before and one day after
-		    wrapper.className = "bright " + this.config.cssclass;
+		if (yourtime > 999395200 && yourtime < 1000086400) { // one week before and one day after
+			wrapper.className = "bright " + this.config.cssclass;
 		} else {
-		    wrapper.className = "normal " + this.config.cssclass;
+			wrapper.className = "dimmed " + this.config.cssclass;
 		}
 
 		if (this.config.decimalSymbol == "."){
-		    wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 		} else {
-		    wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+			wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 		}
 		
 		return wrapper;
