@@ -21,8 +21,8 @@ Module.register("lifecounter", {
 		Log.info("Starting module: " + this.name); 
 		var self = this;
 		setInterval(function() {
-			self.updateDom(1000);
-		},1000);
+			self.updateDom(1);
+		},1);
 	},
 
 	getDom: function() {
