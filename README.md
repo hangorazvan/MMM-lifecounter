@@ -5,14 +5,14 @@ As a number, 1 billion is an almost unimaginable. Here’s a way to help you ima
 
 (1967-10-13)
 
-<br>{
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;module: "lifecounter",
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: "top_left",
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;config: {
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;birthday: "1988-12-31 12:00:00", // year, month, day, 24 hour birthday time
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;before: "Has been", // your comment
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;after: "seconds of your life", // your comment
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cssclass: "small",
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-<br>},
+	{
+		module: "lifecounter",
+		position: "top_left",
+		config: {
+			birthday: "1988-12-31 12:00:00", // year, month, day, 24 hour birthday time
+			counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
+			before: "Has been", // your comment
+			after: "seconds of your life", // your comment
+			cssclass: "small",
+			}
+	},
