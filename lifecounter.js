@@ -6,10 +6,10 @@
 
 Module.register("lifecounter", {
 	defaults: {
-		birthday: "1988-12-31 12:00:00", // year, month, day, 24 hour birthday time
-		counter: "seconds", // seconds, minutes, hours, months, weeks, days, years
-		before: "Has been", // your comment
-		after: "seconds of your life", // your comment
+		birthday: "1988-12-31 12:00:00",	// year, month, day, 24 hour birthday time
+		counter: "seconds",			// seconds, minutes, hours, months, weeks, days, years
+		before: "Has been",			// your comment
+		after: "seconds of your life",		// your comment
 		cssclass: "small",
 	},
 	
