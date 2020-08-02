@@ -9,10 +9,11 @@ As a number, 1 billion is an almost unimaginable. Here’s a way to help you ima
 		module: "lifecounter",
 		position: "top_left",
 		config: {
-			birthday: "1988-12-31 12:00:00",	// year, month, day, 24 hour birthday time
-			counter: "seconds",			// seconds, minutes, hours, months, weeks, days, years
-			before: "Has been",			// your comment
-			after: "seconds of your life",		// your comment
-			cssclass: "small",
-			}
+			birthday: "1970-01-01 00:00:00",
+			counter: "seconds",
+			before: "UNIX Epoch Time",
+			after: "seconds",
+			cssclass: "ssmall"
+			decimalSymbol: config.decimal,
+		}
 	},
