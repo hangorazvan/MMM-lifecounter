@@ -1,27 +1,29 @@
-/* Magic Mirror
- *
- * Redesigned by Răzvan Cristea
- * for iPad 3 & HD display
- *
- * https://github.com/hangorazvan
- * Creative Commons BY-NC-SA 4.0, Romania.
+/*	Magic Mirror 2
+ *	Module: Lifecounter
+ *	by Razvan Cristea 
+ *	https://github.com/hangorazvan
  */
-Module.register("lifecounter", {
 
+Module.register("lifecounter", {
 	defaults: {
+		birthday: "1970-01-01 00:00:00",	// year, month, day, 24 hour birthday time
+		counter: "seconds",					// seconds, minutes, hours, months, weeks, days, years
+		before: "UNIX Epoch Time",			// your comment before
+		after: "seconds",					// your comment after
+		cssclass: "ssmall"
 		decimalSymbol: config.decimal,
 	},
-
-//	getScripts: function() {
-//		return ["moment.js"];
-//	},
 	
+	getScripts: function() {
+		return ["moment.js"];
+	},
+
 	start: function() {
-		Log.info("Starting module: " + this.name); 
+		Log.info("Starting module: " + this.name);
 		var self = this;
 		setInterval(function() {
 			self.updateDom();
-		},1000);
+		}, 1000);
 	},
 
 	getDom: function() {
