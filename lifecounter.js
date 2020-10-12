@@ -9,12 +9,17 @@
 Module.register("lifecounter", {
 
 	defaults: {
-		decimalSymbol: config.decimal,
+		birthday: "1970-01-01 00:00:00",	// year, month, day, 24 hour birthday time
+		counter: "seconds",			// seconds, minutes, hours, months, weeks, days, years
+		before: "UNIX Epoch Time",		// your comment before
+		after: "seconds",			// your comment after
+		cssclass: "ssmall",
+		decimalSymbol: ",",
 	},
 
-//	getScripts: function() {
-//		return ["moment.js"];
-//	},
+	getScripts: function() {
+		return ["moment.js"];
+	},
 	
 	start: function() {
 		Log.info("Starting module: " + this.name);
@@ -36,9 +41,9 @@ Module.register("lifecounter", {
 		}
 
 		if (this.config.decimalSymbol == "."){
-			wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ",").replace("-", "");
 		} else {
-			wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+			wrapper.innerHTML = lifecounter.replace(/\B(?=(\d{3})+(?!\d))/g, ".").replace("-", "");
 		}
 		
 		return wrapper;
