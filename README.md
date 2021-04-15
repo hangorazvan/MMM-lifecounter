@@ -16,6 +16,6 @@ As a number, 1 billion is an almost unimaginable. Here’s a way to help you ima
 			before: "UNIX Epoch Time",		// your comment before
 			after: "seconds",			// your comment after
 			cssclass: "small",
-			decimalSymbol: config.decimal,
+			decimalSymbol: ".",
 		}
 	},

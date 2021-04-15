@@ -11,7 +11,7 @@ Module.register("lifecounter", {
 		before: "UNIX Epoch Time",			// your comment before
 		after: "seconds",					// your comment after
 		cssclass: "small",
-		decimalSymbol: ",",
+		decimalSymbol: ".",
 	},
 	
 	getScripts: function() {
