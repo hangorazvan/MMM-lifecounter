@@ -10,7 +10,7 @@ Module.register("lifecounter", {
 		counter: "seconds",					// seconds, minutes, hours, months, weeks, days, years
 		before: "UNIX Epoch Time",			// your comment before
 		after: "seconds",					// your comment after
-		cssclass: "small"
+		cssclass: "small",
 		decimalSymbol: ",",
 	},
 	

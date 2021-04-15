@@ -15,7 +15,7 @@ As a number, 1 billion is an almost unimaginable. Here’s a way to help you ima
 			counter: "seconds",			// seconds, minutes, hours, months, weeks, days, years
 			before: "UNIX Epoch Time",		// your comment before
 			after: "seconds",			// your comment after
-			cssclass: "small"
+			cssclass: "small",
 			decimalSymbol: config.decimal,
 		}
 	},
