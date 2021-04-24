@@ -1,7 +1,10 @@
-/*	Magic Mirror 2
- *	Module: Lifecounter
- *	by Razvan Cristea 
- *	https://github.com/hangorazvan
+/* Magic Mirror
+ *
+ * MIT Licensed.
+ *
+ * Redesigned by Răzvan Cristea
+ * for iPad 3 & HD display
+ * https://github.com/hangorazvan
  */
 
 Module.register("lifecounter", {
