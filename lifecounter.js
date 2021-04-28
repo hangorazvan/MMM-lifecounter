@@ -1,10 +1,7 @@
-/* Magic Mirror
- *
- * MIT Licensed.
- *
- * Redesigned by Răzvan Cristea
- * for iPad 3 & HD display
- * https://github.com/hangorazvan
+/*	Magic Mirror 2
+ *	Module: Lifecounter
+ *	by Razvan Cristea 
+ *	https://github.com/hangorazvan
  */
 
 Module.register("lifecounter", {
@@ -17,11 +14,11 @@ Module.register("lifecounter", {
 		decimalSymbol: ".",
 	},
 	
-	getScripts: function() {
+	getScripts: function () {
 		return ["moment.js"];
 	},
 	
-	start: function() {
+	start: function () {
 		Log.info("Starting module: " + this.name);
 		var self = this;
 		setInterval(function() {
@@ -29,7 +26,7 @@ Module.register("lifecounter", {
 		}, 1000);
 	},
 
-	getDom: function() {
+	getDom: function () {
 		var wrapper = document.createElement("div");
 		var yourtime = moment.utc().diff(this.config.birthday, this.config.counter);
 		var lifecounter = this.config.before + " " + yourtime + " " + this.config.after;
